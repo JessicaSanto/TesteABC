@@ -266,5 +266,5 @@ if __name__ == '__main__':  # Verifica se este arquivo está sendo executado com
         # mybd.create_all()  # Chama o método 'create_all' para criar todas as tabelas definidas no modelo do banco de dados.
     
         start_mqtt()  # Chama a função 'start_mqtt', que presumivelmente inicia um cliente MQTT (protocolo de mensagens para dispositivos).
-        port = int(os.environ.get("PORT", 5000))  # Azure define a porta automaticamente
+        port = int(os.environ.get("PORT", 8080))  # Azure define a porta automaticamente
         app.run(host='0.0.0.0', port=port)  # Ouvir em todas as interfaces e usar a porta fornecida pela Azure
